@@ -15,7 +15,7 @@
         #loading
         {
             text-align:center; 
-            background: url('loader.gif') no-repeat center; 
+            background: url('/ajax/loader.gif') no-repeat center; 
             height: 150px;
         }
         </style>
@@ -73,7 +73,7 @@
             <div class="col-md-9">
             	<br />
                 <div class="row filter_data">
-
+                    @include('fetch');
                 </div>
             </div>
         </div>
