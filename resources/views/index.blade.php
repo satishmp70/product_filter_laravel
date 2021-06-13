@@ -25,7 +25,7 @@
     <div class="container">
         <div class="row">
         	<br />
-        	<h2 align="center">Advance Ajax Product Filters in PHP</h2>
+        	<h2 align="center"> Product Filters</h2>
         	<br />
             <div class="col-md-3">                				
 				<div class="list-group">

@@ -22,21 +22,16 @@ class AjaxFilterController extends Controller
             
             if($request->brand){
                 $brand_filter=implode("','",$request->brand);
-                // dd($brand_filter);
                $product_detail=Product::whereIn('product_brand',[$brand_filter])->get();
-            //    dd($product_detail);
 
             }
             if($request->storage){
                 $storage_filter=implode("','",$request->storage);
                $product_detail=Product::whereIn('product_storage',[$storage_filter])->get();
-            //    dd($product_detail);
-
             }
             if($request->ram){
                 $ram_filter=implode("','",$request->ram);
                $product_detail=Product::whereIn('product_ram',[$ram_filter])->get();
-            //    dd($product_detail);
 
             }
         }
