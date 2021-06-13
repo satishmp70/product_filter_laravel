@@ -40,7 +40,7 @@ class AjaxFilterController extends Controller
 
             }
         }
-        return response()->json(array('product_detail' => $product_detail));
+        return view('fetch',compact('product_detail'));
         
     }
     

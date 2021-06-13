@@ -102,6 +102,7 @@
                                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                             },
                     url:"/fetch_data",
+                    dataType: 'html',
                     method:"POST",
                     data:{action:action, minimum_price:minimum_price, maximum_price:maximum_price, brand:brand, ram:ram, storage:storage},
                     success:function(data){
